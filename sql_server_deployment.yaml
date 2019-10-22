@@ -21,10 +21,7 @@ spec:
         - name: ACCEPT_EULA
           value: "Y"
         - name: MSSQL_SA_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: mssql
-              key: SA_PASSWORD 
+          value: "Anna@2606"
 ---
 apiVersion: v1
 kind: Service
