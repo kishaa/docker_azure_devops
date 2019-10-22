@@ -12,7 +12,7 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
       - name: mssql
-        image: #{/kishaa/$(Build.Repository.Name):$(Build.BuildId)}#
+        image: #{$(Build.Repository.Name):$(Build.BuildId)}#
         ports:
         - containerPort: 1433
         env:
